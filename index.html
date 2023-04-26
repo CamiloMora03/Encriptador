@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    
+            <div class="logo">
+                <!-- Espacio para agregar logotipo -->
+            </div>
+    <div class="container">
+        <div class="text-box">
+            <!-- Caja de texto para ingresar el mensaje a encriptar o desencriptar -->
+            <div class="input">
+                <textarea id="mensaje" name="textoEncriptar" placeholder="Ingrese el mensaje aqui"></textarea>
+
+                <p class="information"> ❗ Solo letras minusculas y sin acentos o signos</p>
+            </div>
+            <div>
+            </div>
+            <div class="botones">
+                <!-- Botones para ejecutar la accion de encriptar o desenciptar el mensaje -->
+                <button  onclick="btnEncriptar()" class="btn submit">Encriptar</button>
+                <button onclick="btnDesencriptar()" class="btn clean">Desencriptar</button>
+            </div>
+        </div>
+        <div class="results">
+            <!-- Caja de mensaje encriptado o desencriptado -->
+            <textarea class="resultadoMensaje"></textarea>
+            <div class="alterText">
+                <!-- <img src="img.png" alt=""> -->
+                <h3>Ningun mensaje fue encontrado</h3>
+                <br>
+                <h4>Ingresa el texto que desees encriptar o desencriptar</h4>
+            </div>
+            <div class="botonesReslt">
+                <!-- Boton para copiar el texto del resultado -->
+                <button onclick="copiar()" id="copiar" class="btn clean">Copiar</button>
+                <button onclick="limpiar()" id="limpiar" class="btn danger">Limpiar</button>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
